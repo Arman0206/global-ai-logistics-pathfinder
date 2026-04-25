@@ -31,7 +31,7 @@ Unlike standard mapping tools that rely on pre-built Google APIs, this project d
 
 bash
 
-git clone [https://github.com/YOUR_USERNAME/global-logistics-pathfinder.git](https://github.com/YOUR_USERNAME/global-logistics-pathfinder.git)
+git clone [https://github.com/Arman0206/global-logistics-pathfinder.git](https://github.com/Arman0206/global-logistics-pathfinder.git)
 cd global-logistics-pathfinder
 2. Install dependencies
 
