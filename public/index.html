@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Logistics Pathfinder</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h1>🌍 Global Logistics <span>Visualizer</span></h1>
+            <p>AI-Powered Pathfinding & Risk Assessment</p>
+        </header>
+
+        <div class="main-layout">
+            <div id="map"></div>
+
+            <div class="dashboard">
+                <div class="input-card">
+                    <div class="field">
+                        <label>Origin</label>
+                        <input type="text" id="start-city" placeholder="e.g. London, UK">
+                    </div>
+                    <div class="field">
+                        <label>Destination</label>
+                        <input type="text" id="end-city" placeholder="e.g. Paris, FR">
+                    </div>
+                    <button id="dispatch-btn" onclick="calculateGlobalRoute()">
+                        <span id="btn-text">🚀 Dispatch AI Courier</span>
+                        <div id="loader" class="hidden"></div>
+                    </button>
+                </div>
+
+                <div class="results-card">
+                    <div class="status-badge" id="status-badge">System Ready</div>
+                    <div class="path-display">
+                        <strong>Optimal Path:</strong>
+                        <p id="route-path">None</p>
+                    </div>
+                    <div class="ai-box">
+                        <div class="ai-header">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" width="20" alt="AI">
+                            <span>Groq AI Insights</span>
+                        </div>
+                        <p id="ai-insight">Awaiting destination coordinates...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
